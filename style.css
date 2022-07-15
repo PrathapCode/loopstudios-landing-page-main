@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Commissioner:wght@400;500;700&family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Commissioner:wght@400;500;700&family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Josefin+Sans:wght@300&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .header {
+    background-image: url(/images/mobile/image-hero.jpg);
+    width: 731px;
+    height: 1250px;
+    padding: 60px 40px;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logo-top {
+    width: 300px;
+  }
+  .bar {
+    width: 50px;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    cursor: pointer;
+    width: 45px;
+    left: 640px;
+    display: none;
+  }
+  .navigation {
+    background-color: black;
+    padding-left: 60px;
+    position: absolute;
+    line-height: 100px;
+    width: 731px;
+    left: 0;
+    top: 400px;
+    visibility: hidden;
+  }
+  .navigation p {
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .caption-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 320px;
+    text-transform: uppercase;
+    border: 4px solid #fff;
+  }
+  .caption-box h1 {
+    font-size: 80px;
+    font-weight: normal;
+  }
+  .vr-desktop {
+    display: none;
+  }
+  .main-container {
+    width: 731px;
+    text-align: center;
+    padding: 200px 30px 300px 30px;
+  }
+  .vr-mobile {
+    margin-bottom: 70px;
+  }
+  .vr-text h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
+  .vr-text p {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #8c8c8c;
+    padding: 0 70px;
+  }
+  .interactive-vr {
+    margin-bottom: 200px;
+  }
+  .creation-text h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  .creation-text button {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 635%;
+    left: 54%;
+    background-color: #fff;
+    padding: 24px 0px 24px 10px;
+    font-size: 26px;
+    font-weight: 600;
+    width: 350px;
+  }
+  .creations {
+    margin-left: 10px;
+  }
+  .earth {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: url(/images/mobile/image-deep-earth.jpg);
+  }
+  .earth:hover, .arcade:hover, .grid:hover, .pocket:hover, .curiosity:hover, .soccer:hover, .fromup:hover, .fisheye:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+  .earth:hover h2, .arcade:hover h2, .grid:hover h2, .pocket:hover h2, .curiosity:hover h2, .soccer:hover h2, .fromup:hover h2, .fisheye:hover h2 {
+    color: black;
+    font-weight: 1000;
+  }
+  .earth h2, .arcade h2, .grid h2, .pocket h2, .curiosity h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+    width: 200px;
+  }
+  .soccer h2, .fromup h2, .fisheye h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+    width: 270px;
+  }
+  .arcade {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-night-arcade.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-night-arcade.jpg);
+  }
+  .soccer {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-soccer-team.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-soccer-team.jpg);
+  }
+  .grid {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-grid.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-grid.jpg);
+  }
+  .fromup {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-from-above.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-from-above.jpg);
+  }
+  .pocket {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: url(/images/mobile/image-pocket-borealis.jpg);
+  }
+  .curiosity {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-curiosity.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-curiosity.jpg);
+  }
+  .fisheye {
+    width: 655px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding: 100px 0 0 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/mobile/image-fisheye.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/mobile/image-fisheye.jpg);
+  }
+  .footer {
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+    width: 731px;
+  }
+  .logo-bottom img {
+    width: 300px;
+  }
+  .bottom-nav p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  .bottom-nav {
+    margin: 100px 0;
+  }
+  .social-media img {
+    width: 45px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+    cursor: pointer;
+  }
+  .copyrights {
+    color: #8c8c8c;
+    font-weight: 900;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .bar, .close, .vr-mobile {
+    display: none;
+  }
+  .header {
+    background-image: url(/images/desktop/image-hero.jpg);
+    padding: 70px 150px;
+    height: 650px;
+  }
+  .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 120px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  .caption-box {
+    color: #fff;
+    width: 650px;
+    padding: 40px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+  }
+  .caption-box h1 {
+    font-size: 70px;
+    font-weight: normal;
+  }
+  .main-container {
+    padding: 140px;
+  }
+  .interactive-vr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .vr-text {
+    background-color: white;
+    width: 761px;
+    padding: 100px 39px 100px 100px;
+    margin: 170px 0 0 -150px;
+  }
+  .vr-text h1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+  }
+  .vr-text p {
+    color: dimgray;
+    line-height: 30px;
+    font-weight: 800;
+  }
+  .creation-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .creation-text h1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .creation-text button {
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 6px;
+    font-weight: normal;
+    margin-right: 30px;
+    padding: 10px 20px 10px 30px;
+    font-size: 20px;
+  }
+  .top-creations, .bottom-creations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+  }
+  .top-creations {
+    margin-bottom: 40px;
+  }
+  .creations h2 {
+    text-transform: uppercase;
+    margin: 330px 0 0 40px;
+    font-size: 30px;
+    width: 150px;
+  }
+  .grid h2 {
+    width: 100px;
+  }
+  .fromup h2 {
+    width: 200px;
+  }
+  .earth {
+    width: 255px;
+    height: 440px;
+    margin-right: 40px;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-deep-earth.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-deep-earth.jpg);
+  }
+  .arcade {
+    width: 255px;
+    cursor: pointer;
+    height: 440px;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-night-arcade.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-night-arcade.jpg);
+  }
+  .soccer {
+    width: 255px;
+    cursor: pointer;
+    height: 440px;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-soccer-team.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-soccer-team.jpg);
+  }
+  .grid {
+    width: 255px;
+    cursor: pointer;
+    height: 440px;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-grid.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-grid.jpg);
+  }
+  .fromup {
+    width: 255px;
+    height: 440px;
+    cursor: pointer;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-from-above.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-from-above.jpg);
+  }
+  .pocket {
+    width: 255px;
+    height: 440px;
+    margin-right: 40px;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-pocket-borealis.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-pocket-borealis.jpg);
+  }
+  .curiosity {
+    width: 255px;
+    cursor: pointer;
+    height: 440px;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-curiosity.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-curiosity.jpg);
+  }
+  .fisheye {
+    width: 255px;
+    height: 440px;
+    cursor: pointer;
+    margin-right: 40px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(148, 9, 9, 0))), url(/images/desktop/image-fisheye.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(148, 9, 9, 0)), url(/images/desktop/image-fisheye.jpg);
+  }
+  .earth:hover, .arcade:hover, .grid:hover, .pocket:hover, .curiosity:hover, .soccer:hover, .fromup:hover, .fisheye:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+  .earth:hover h2, .arcade:hover h2, .grid:hover h2, .pocket:hover h2, .curiosity:hover h2, .soccer:hover h2, .fromup:hover h2, .fisheye:hover h2 {
+    color: black;
+    font-weight: 900;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 140px;
+    background-color: black;
+  }
+  .logo-bottom {
+    margin-bottom: 25px;
+  }
+  .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bottom-nav p {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+  }
+  .social-media {
+    text-align: right;
+    margin-bottom: 25px;
+  }
+  .social-media img {
+    margin-left: 20px;
+    cursor: pointer;
+    width: 30px;
+  }
+  .copyrights {
+    color: #fff;
+    font-size: 20px;
+    color: #8c8c8c;
+    font-weight: 700;
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
